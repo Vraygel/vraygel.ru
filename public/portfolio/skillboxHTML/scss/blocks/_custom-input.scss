@@ -1,0 +1,52 @@
+.custom-input {
+  position: relative;
+  width: 100%;
+  $root: &;
+
+  &__field {
+    border: 1px solid transparent;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 23.4px;
+    outline: none;
+    padding: 17px 20px;
+    transition: border-color $transition-300;
+    width: 100%;
+
+    @include vp-1023 {
+      padding: 15px 20px;
+    }
+
+    @include vp-767 {
+      padding: 15px 20px;
+      font-size: 16px;
+      line-height: 20.8px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      border-color: $color-free-speech-blue;
+    }
+
+    &::placeholder {
+      color: $color-suva-grey;
+    }
+  }
+}
+
+.error-message {
+  // display: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: $color-red-orange;
+}
+
+.error .custom-input__field {
+  border-color: $color-red-orange;
+}
+
+.error .error-message {
+  display: block;
+}

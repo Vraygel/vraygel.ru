@@ -1,0 +1,215 @@
+.info-banner {
+  display: flex;
+  margin: 0 0 100px 0;
+  background-color: $color-white-smoke;
+  padding: 92px 0;
+  overflow: hidden;
+  border-radius: 56px;
+  min-height: 716px;
+  $root: &;
+
+  @include vp-1023 {
+    height: unset;
+    padding: 64px 0;
+    margin: 0 0 80px 0;
+    border-radius: 40px;
+  }
+
+  @include vp-767 {
+    padding: 48px 0;
+    margin: 0 0 64px 0;
+    border-radius: 32px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 115px;
+    align-items: center;
+    // height: 100%;
+
+    &:hover {
+      #{$root}__decor {
+        //animation: dashOffsetIn 2s ease-in forwards;
+        stroke-dashoffset: 0;
+        opacity: 0;
+        transition: stroke-dashoffset ease-in 1s, opacity 0s 1.2s;
+      }
+
+      #{$root}__img--second {
+        transition: opacity $transition-300 0.9s;
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 1480px) {
+      gap: 40px;
+    }
+
+    @include vp-1023 {
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    @include vp-767 {
+      gap: 32px;
+    }
+  }
+
+  &__picture {
+    position: relative;
+    flex-shrink: 0;
+    margin: 0 0 0 -186px;
+
+    @media (max-width: 1480px) {
+      margin: 0 0 0 -70px;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 1200px) {
+      margin: 0 0 0 -60px;
+    }
+
+    @include vp-1023 {
+      margin: 0;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    stroke-dasharray: 2800;
+    stroke-dashoffset: 2800;
+    transition: stroke-dashoffset ease-in 1s 0.5s, opacity $transition-300;
+    //animation: dashOffsetOut 2s ease-in forwards;
+
+    @media (max-width: 1480px) {
+      height: 409px;
+      width: 783px;
+    }
+
+    @media (max-width: 1200px) {
+      height: 313px;
+      width: 599px;
+    }
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &__img {
+    height: 532px;
+    width: 1018px;
+    display: flex;
+
+    @media (max-width: 1480px) {
+      height: 409px;
+      width: 783px;
+    }
+
+    @media (max-width: 1200px) {
+      height: 313px;
+      width: 599px;
+    }
+
+    @include vp-1023 {
+      width: 704px;
+      height: 502px;
+    }
+
+    @include vp-767 {
+      width: 320px;
+      height: 228px;
+    }
+
+    &--second {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: opacity $transition-300 0.3s;
+
+      @include vp-1023 {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 48px;
+    font-family: $ff-second;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+
+    @include vp-1023 {
+      font-size: 36px;
+      line-height: 39.6px;
+      margin: 0 0 16px 0;
+    }
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 26.4px;
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 23.4px;
+    margin: 0 0 40px 0;
+
+    @include vp-1023 {
+      margin: 0 0 33px 0;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 20.8px;
+      margin: 0 0 27px 0;
+    }
+  }
+
+  &__link {
+    width: 181px;
+
+    @include vp-1023 {
+      width: 169px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+}
+
+//@keyframes dashOffsetIn {
+//  0% {
+//    pointer-events: none;
+//  }
+//  50% {
+//    stroke-dashoffset: 0;
+//  }
+//  100% {
+//    pointer-events: all;
+//    stroke-dashoffset: 2800;
+//  }
+//}
+//
+//@keyframes dashOffsetOut {
+//  0% {
+//    pointer-events: none;
+//  }
+//  50% {
+//    stroke-dashoffset: 0;
+//  }
+//  100% {
+//    pointer-events: all;
+//    stroke-dashoffset: 2800;
+//  }
+//}
+
+
