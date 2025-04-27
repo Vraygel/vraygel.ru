@@ -14,6 +14,7 @@
 	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
+	<link rel="preload" href="img/raygel.jpg" as="image">
 
 	<!-- SEO Meta Tags -->
 	<meta name="description"
@@ -57,13 +58,14 @@
 </head>
 
 <body class="body">
+
 	<header class="header">
 		<div class="header__inner">
 			<div class="header__container">
 				<div class="header__logo-wrapper">
 					<a class="header__logo" href="/">
 						<svg class="header__logo-svg" id="Layer_1" data-name="Layer 1" fill="#fff"
-							xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 790.52">
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 790.52" aria-label="Логотип VRaygel">
 							<path d="M253.77,790.52,0,0H142.11L308.34,554,463.14,0H601.45L350.21,790.52Z" />
 							<path
 								d="M830,447.92a216.84,216.84,0,0,0,78.66-52A254.9,254.9,0,0,0,960,318.49q18.38-43.12,18.4-86.28,0-69.77-29.19-122.44T858.52,28.55Q796.95,0,699.27,0H465l60.34,124.43H594v-.07H709.43q40.58,0,67.88,15.22t40.6,40Q831.24,204.3,831.24,236q0,49.48-30.46,78T709.43,342.6H631.16L689,461.87h.12L849,790.52h151Z" />
@@ -73,13 +75,10 @@
 				</div>
 				<nav class="header__navigation">
 					<ul class="header__menu header__menu-inner">
-						<!-- <li class="header__menu-item">
-							<a class="header__menu-link" href="/">Home</a>
-						</li> -->
-						<li class="header__menu-item">
-							<a class="header__menu-link" href="/">Hosting</a>
+						<li class="header__menu-item" aria-label="Переход на страницу хостинга">
+							<a class="header__menu-link" href="/" aria-current="page">Hosting</a>
 						</li>
-						<!-- <li class="header__menu-item">
+						<!-- <!-- <li class="header__menu-item" aria-label="Переход на страницу блога">
 							<a class="header__menu-link" href="/">Blogs</a>
 						</li> -->
 					</ul>
@@ -92,19 +91,20 @@
 						<span></span>
 					</div>
 					<ul class="header__menu header__menu-social">
-						<li class="header__menu-item">
-							<a class="header__menu-link header__menu-icon header__menu-link-github" href="https://github.com/Vraygel"
-								target="_blank">
+						<ul class="header__menu header__menu-social" aria-label="Ссылки на социальные сети">
+							<li class="header__menu-item" aria-label="Переход на страницу GitHub">
+								<a class="header__menu-link header__menu-icon header__menu-link-github" href="https://github.com/Vraygel"
+									target="_blank" rel="noopener noreferrer">
 								<p>GitHub</p>
 							</a>
 						</li>
-						<li class="header__menu-item">
+						<li class="header__menu-item" aria-label="Переход на страницу Telegram">
 							<a class="header__menu-link header__menu-icon header__menu-link-telegram" href="https://t.me/vraygel"
-								target="_blank">
+								target="_blank" rel="noopener noreferrer">
 								<p>Telegram</p>
 							</a>
 						</li>
-						<li class="header__menu-item">
+						<li class="header__menu-item" aria-label="Переход на страницу WhatsApp">
 							<a class="header__menu-link header__menu-icon header__menu-link-whatsapp"
 								href="https://wa.me/+79678596474" target="_blank">
 								<p>WhatsApp</p>
@@ -116,8 +116,8 @@
 		</div>
 		<div class="header__nav-wrapper">
 			<nav class="header-menu">
-				<ul class="header-menu__list">
-					<li class="header-menu__item">
+				<ul class="header-menu__list" aria-label="Навигация по сайту">
+					<li class="header-menu__item" aria-label="Переход на главную страницу">
 						<a class="header-menu__link" href="#">
 							<svg class="header-menu__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +137,7 @@
 							<span class="header-menu__text">Домой</span>
 						</a>
 					</li>
-					<li class="header-menu__item">
+					<li class="header-menu__item" aria-label="Переход на страницу обо мне">
 						<a class="header-menu__link" href="#about">
 							<svg class="header-menu__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +151,7 @@
 							<span class="header-menu__text">About Me</span>
 						</a>
 					</li>
-					<li class="header-menu__item">
+					<li class="header-menu__item" aria-label="Переход на страницу навыков">
 						<a class="header-menu__link" href="#skills">
 							<svg class="header-menu__icon" width="22" height="14" viewBox="0 0 22 14" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -165,7 +165,7 @@
 							<span class="header-menu__text">Skills</span>
 						</a>
 					</li>
-					<li class="header-menu__item">
+					<li class="header-menu__item" aria-label="Переход на страницу работ">
 						<a class="header-menu__link" href="#works">
 							<svg class="header-menu__icon" width="22" height="20" viewBox="0 0 22 20" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -176,7 +176,7 @@
 							<span class="header-menu__text">Works</span>
 						</a>
 					</li>
-					<li class="header-menu__item">
+					<li class="header-menu__item" aria-label="Переход на страницу контактов">
 						<a class="header-menu__link" href="#contact">
 							<svg class="header-menu__icon" width="22" height="18" viewBox="0 0 22 18" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -191,25 +191,19 @@
 			</nav>
 		</div>
 		<div class="developer__wrapper autoScroll">
-			<h1 class="developer__wrapper-title">Developer</h1>
+			<h1 class="developer__wrapper-title" aria-label="Разработчик">Developer</h1>
 			<div class="developer__wrapper-left">
 				<div class="developer__personal">
-					<img class="developer__img" src="./img/raygel.jpg" alt="Фотография Райгель Владимир">
-					<h2 class="developer__name">Владимир</h2>
-					<h3 class="developer__profession">Full-stack developer</h3>
-					<ul>
+					<img class="developer__img" src="./img/raygel.jpg" alt="Фотография Райгель Владимир" loading="lazy">
+					<h2 class="developer__name" aria-label="Имя разработчика">Владимир</h2>
+					<h3 class="developer__profession" aria-label="Профессия разработчика">Full-stack developer</h3>
+					<ul aria-label="Контактная информация">
 						<li class="developer__contact developer__contact_email"><a class="developer__contact-link"
-								href="mailto:vraygel@mail.ru" target="_blank">vraygel@mail.ru</a></li>
+							href="mailto:vraygel@mail.ru" target="_blank" rel="noopener noreferrer">vraygel@mail.ru</a></li>
 						<li class="developer__contact developer__contact_adress"><a class="developer__contact-link"
-								href="https://yandex.ru/maps/?ll=60.900911%2C56.839313&z=10.41" target="_blank">Екатеринбург</a></li>
+							href="https://yandex.ru/maps/?ll=60.900911%2C56.839313&z=10.41" target="_blank" rel="noopener noreferrer">Екатеринбург</a></li>
 						<li class="developer__contact developer__contact_briefcase">
-							<p>Постоянная занятость</p>
-						</li>
-						<li class="developer__contact developer__contact_briefcase">
-							<p>Фриланс</p>
-						</li>
-						<li class="developer__contact developer__contact_briefcase">
-							<p>Любые проекты</p>
+							<p>Постоянная занятость / Фриланс</p>
 						</li>
 						<li class="developer__contact developer__contact_site"><a class="developer__contact-link" href="#"
 								target="_blank">VRaygel.ru</a></li>
@@ -220,14 +214,13 @@
 						<li class="developer__skill">JS</li>
 						<li class="developer__skill">REACT</li>
 					</ul>
-					<button class="developer__download-cv" type="button">Download CV</button>
-
+					<a href="/img/Raygel.docx" download target="_blank" rel="noopener noreferrer"><button class="developer__download-cv" type="button">Download	CV</button></a>
 				</div>
 			</div>
 			<div class="developer__wrapper-center">
 				<div class="developer__center">
 					<code class="code">&lt;h1&gt;</code>
-					<h2 class="developer__greeting">Привет</h2>
+					<h2 class="developer__greeting" aria-label="Приветствие">Привет</h2>
 					<h2 class="developer__greeting">Я <span class="developer__greeting-name">Райгель Владимир</span></h2>
 					<h2 class="developer__greeting">Full-Stack Developer</h2>
 					<code class="code">&lt;h1&gt;</code>
@@ -237,82 +230,55 @@
 						сообщение!)</p>
 					<code class="code">&lt;p&gt;</code>
 					<a class="developer__message" href="#contact">let’s talk <i class="developer__message-icon"></i></a>
-
 				</div>
 			</div>
-			<!-- <div class="developer__inner">
-				<div class="developer__wrapper-right">
-					<div class="developer__stats">
-						<div class="developer__stats-item">
-							<span class="developer__stats-number">4</span>
-							<p class="developer__stats-text">Языка програмирования</p>
-						</div>
-						<div class="developer__stats-item">
-							<span class="developer__stats-number">4</span>
-							<p class="developer__stats-text">Инструмента разработки</p>
-						</div>
-						<div class="developer__stats-item">
-							<span class="developer__stats-number">∞</span>
-							<p class="developer__stats-text">Постоянно развиваюсь
-							</p>
-						</div>
-					</div>
-				</div>
-			</div> -->
 		</div>
 	</header>
-	<main class="main">
 
+	<main class="main">
 		<section class="about autoScroll" id="about">
 			<div class="mouse-scroll"></div>
-
 			<div class="section-wrapper">
 				<div class="about__container">
-					<h2 class="about__title">Обо мне</h2>
+					<h2 class="about__title" aria-label="Обо мне">Обо мне</h2>
 					<div class="about__content">
 						<code class="code">&lt;p&gt;</code>
 						<h3 class="about__greeting">Привет!</h3>
 						<p class="about__paragraph">
-							Меня зовут Владимир, и я frontend-разработчик, стремящийся покорять вершины мира IT-технологий. Окончил
-							профильные курсы по специальности «Frontend-разработка» в образовательной платформе Netology и параллельно
-							прохожу углубленное обучение по курсу Fullstack-разработчика на JavaScript в школе Skillbox.
+							Я — начинающий веб-разработчик и специалист по верстке сайтов с твердым желанием расти и развиваться в
+							сфере IT. Мой путь в программировании начался с обучения на курсе Frontend-разработки в компании
+							netology.ru, после чего я продолжил расширять свои навыки на курсах Fullstack-разработки с акцентом на
+							JavaScript в компании Skillbox.
 						</p>
 						<p class="about__paragraph">
-							Освоил фундаментальные инструменты современной веб-разработки: HTML, CSS, JavaScript, а также начал изучение
-							популярного фреймворка React.js. Мне интересно разрабатывать интерактивные интерфейсы и улучшать
-							производительность приложений. Каждый новый проект становится отличным поводом попробовать свежие подходы и
-							повысить свою квалификацию.
+							В настоящее время я активно изучаю TypeScript, а далее планирую освоить React.js, Node.js, Express.js,
+							PostgreSQL и MongoDB — это даст мне возможность создавать полноценные веб-приложения и сайты с серверной
+							частью, а также реализовывать сложные функциональные решения.
 						</p>
 						<p class="about__paragraph">
-							У меня есть опыт реализации учебных проектов разной сложности, а также опыта работы над настоящим
-							коммерческим проектом. Сейчас я занят разработкой платформы MemBoost — сервиса для эффективного запоминания
-							информации с применением алгоритмов интервального повторения по методике Эббингауза. В процессе проекта
-							освоил back-end разработку с использованием Express.js, Mongoose, Multer и других современных технологий.
+							Благодаря гибкому графику работы, я эффективно совмещаю работу и обучение, что позволяет мне оказывать
+							практические услуги по верстке, разработке сайтов и созданию веб-приложений, а также развивать свои знания
+							и компетенции на реальных проектах. У меня есть опыт разработки учебных проектов с использованием HTML,
+							CSS и JavaScript, а также опыта работы над настоящим коммерческим проектом. Мой текущий проект —
+							memboost.ru, платформа для интервального повторения по методу Эббингауза. Этот pet-проект стал отличной
+							площадкой для освоения новых технологий backend-разработки: Express.js, Mongoose, Multer и других
+							инструментов современного fullstack-стека.
 						</p>
 						<p class="about__paragraph">
-							С удовольствием занимаюсь созданием качественных цифровых продуктов, ведь я согласен с высказыванием Генри
-							Форда: «Лучшая работа — это высокооплачиваемое хобби». Моя страсть к обучению и развитию позволяет мне
-							уверенно двигаться вперёд, решая любые технические задачи и успешно внедряя инновационные идеи.
+							Я считаю себя талантливым и мотивированным Junior Frontend разработчиком и верстальщиком, готовым к новым
+							вызовам и интересным проектам. Мое кредо — постоянное развитие и внедрение новых технологий, потому что,
+							как сказал Генри Форд: «Лучшая работа — это высокооплачиваемое хобби». Я уверен, что мои навыки и
+							стремление к совершенству позволят мне внести ценный вклад в развитие ваших проектов и создать сайты,
+							которыми гордятся заказчики и пользуются пользователи.
 						</p>
 						<p class="about__paragraph">
-						Готов делиться своим опытом и идеями, создавая продукты, которыми гордятся заказчики и пользователи. Хочешь
-						сотрудничать или просто задать вопрос? Обращайся ко мне любым удобным способом связи — обсудим детали твоего
-						проекта и найдем наилучшее решение.
+							Идеи для сотрудничества или вопросы? Обращайтесь любым удобным способом — обсудим детали и найдем
+							наилучшее решение для вашего проекта.
 						</p>
-
-						<!-- <p class="about__paragraph">Я целеустремленный человек и вечный оптимист, стремящийся писать
-							понятный,
-							лаконичный, надежный код, который работает.</p>
-						<p class="about__paragraph">Я стремлюсь никогда не прекращать учиться и совершенствоваться.</p>
-						<p class="about__paragraph">Когда я не занимаюсь программированием, читаю или занимаюсь каким-нибудь
-							новым
-							проектом.</p>
-						<p class="about__paragraph">Мне нравится, когда мои взгляды и системы убеждений меняются, и я смотрю
-							на мир новыми глазами.</p> -->
 						<code class="code">&lt;p&gt;</code>
 					</div>
 				</div>
-				<div class="about__photo"></div>
+				<div class="about__photo" loading="lazy"></div>
 			</div>
 		</section>
 
@@ -320,7 +286,7 @@
 			<div class="mouse-scroll"></div>
 			<code class="section__text_code">&lt;/&gt;</code>
 			<div class="section__header">
-				<h2 class="section__title">Skills</h2>
+				<h2 class="section__title" aria-label="Навыки">Skills</h2>
 				<p class="section__description">Я стремлюсь никогда не прекращать учиться и совершенствоваться</p>
 			</div>
 			<div class="skills__development">
@@ -336,16 +302,12 @@
 							<li class="skills__item skills__item_html">HTML</li>
 							<li class="skills__item skills__item_css">CSS</li>
 						</ul>
-						<!-- <li class="skills__item skills__item_html">HTML</li>
-							<li class="skills__item skills__item_css">CSS</li> -->
 					</li>
 					<li>
 						<ul class="skills__list_inner">
 							<li class="skills__item skills__item_js">JS</li>
 							<li class="skills__item skills__item_react">REACT</li>
 						</ul>
-						<!-- <li class="skills__item skills__item_js">JS</li>
-							<li class="skills__item skills__item_react">REACT</li> -->
 					</li>
 				</ul>
 			</div>
@@ -354,7 +316,7 @@
 		<section class="section works autoScroll" id="works">
 			<div class="mouse-scroll"></div>
 			<div class="section__header">
-				<h2 class="section__title title">Works</h2>
+				<h2 class="section__title title" aria-label="Проекты">Works</h2>
 				<p class="section__description">Я имел удовольствие работать с этими потрясающими проектами</p>
 			</div>
 			<div class="swiper mySwiper works__swiper">
@@ -377,7 +339,7 @@
 						<a href="/portfolio/skillboxjavascript/catalog.html" target="_blank"><img src="./img/briaton.jpg"
 								alt="pawtastic"></a>
 						<a href="/portfolio/skillboxjavascript/catalog.html" target="_blank">
-							<h3 class="works__slide_title">Финальный Проект JavaScript</h3>
+							<h3 class="works__slide_title">Финальный проект JS</h3>
 						</a>
 					</div>
 					<div class="swiper-slide works__slide">
@@ -389,33 +351,31 @@
 				</div>
 				<div class="swiper-button-prev works__button-prev"></div>
 				<div class="swiper-button-next works__button-next"></div>
-
 			</div>
 		</section>
-		<!-- <div class="blogs"></div> -->
+
 		<section class="section contact autoScroll" id="contact">
 			<div class="mouse-scroll"></div>
 			<div class="section__header section__header_contact">
 				<h2 class="section__title title">Contact</h2>
 				<p class="section__description">В настоящее время я могу работать фрилансером</p>
 			</div>
-
-			<h2 class="contact__title title">Send me a message</h2>
+			<h2 class="contact__title title" aria-label="Отправить сообщение">Send me a message</h2>
 			<form class="contact__form" action="#" id="contactForm">
 				<div class="contact__input-wrapper">
 					<div class="contact__input-inner">
-						<label class="contact__label" for="userNameInput">Ваше имя*</label>
+						<label class="contact__label" for="userNameInput" aria-label="Ваше имя">Ваше имя*</label>
 						<input class="contact__input contact__input_name" type="text" name="userNameInput"
 							placeholder="Введите ваше имя" id="userNameInput">
 					</div>
 					<div class="contact__input-inner">
-						<label class="contact__label" for="userEmailInput">Ваш Емаил*</label>
+						<label class="contact__label" for="userEmailInput" aria-label="Ваш Емаил">Ваш Емаил*</label>
 						<input class="contact__input contact__input_emeail" type="text" name="userEmailInput"
 							placeholder="Введите ваш email" id="userEmailInput">
 					</div>
 				</div>
 				<div class="contact__input-inner">
-					<label class="contact__label" for="userMessageInput">Ваше сообщение</label>
+					<label class="contact__label" for="userMessageInput" aria-label="Ваше сообщение">Ваше сообщение</label>
 					<textarea class="contact__textarea" name="userMessageInput" id="userMessageInput"
 						placeholder="Напишите Ваше сообщение"></textarea>
 				</div>
@@ -423,22 +383,21 @@
 					<button class="contact__btn" type="submit">Отправить</button>
 				</div>
 			</form>
-
 		</section>
-
 	</main>
 
 	<footer class="footer">
+
 		<div class="container container__footer">
 			<p class="footer__text text">&copy; 2025 Райгель Владимир. Все права защищены.</p>
-			<!-- <p class="footer__text text">Gолитика конфиденциальности. Правила и условия </p> -->
 			<p class="footer__text text">Design By: <a class="footer__link" href="/">Vraygel</a></p>
 		</div>
 
 	</footer>
+
 	<div class="modal" id="modalError">
 		<div class="modal__window">
-			<h2 class="modal__title">Ошибка!</h2>
+			<h2 class="modal__title" aria-label="Ошибка">Ошибка!</h2>
 			<p class="modal__text">Пожалуйста, заполните все обязательные поля корректно.</p>
 			<button class="modal__btn" type="button" data-close>Ок</button>
 		</div>

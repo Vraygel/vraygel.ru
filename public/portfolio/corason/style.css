@@ -4,7 +4,6 @@ html {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
 }
 
 *,
@@ -114,6 +113,7 @@ button {
 	0% {
 		background-image: none;
 	}
+
 	100% {
 		background-image: url(./img/corason.png);
 	}
@@ -123,6 +123,7 @@ button {
 	0% {
 		background-image: none;
 	}
+
 	100% {
 		background-image: url(./img/corason.png);
 	}
@@ -304,22 +305,27 @@ button {
 		-webkit-transform: translateY(-25px) scale(1);
 		transform: translateY(-25px) scale(1);
 	}
+
 	10% {
 		-webkit-transform: translateY(-25px) scale(1.1);
 		transform: translateY(-25px) scale(1.1);
 	}
+
 	40% {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
+
 	50% {
 		-webkit-transform: translateY(0) scale(1);
 		transform: translateY(0) scale(1);
 	}
+
 	75% {
 		-webkit-transform: translateY(-10px) scale(1.05);
 		transform: translateY(-10px) scale(1.05);
 	}
+
 	100% {
 		-webkit-transform: translateY(0) scale(1);
 		transform: translateY(0) scale(1);
@@ -386,6 +392,7 @@ button {
 	-webkit-animation: scale-animation 0.5s ease-in-out forwards;
 	animation: scale-animation 0.5s ease-in-out forwards;
 }
+
 @-webkit-keyframes scale-animation {
 	0% {
 		-webkit-transform: scale(1);
@@ -393,10 +400,12 @@ button {
 		-webkit-filter: blur(3px);
 		filter: blur(3px);
 	}
+
 	50% {
 		-webkit-transform: scale(1.05);
 		transform: scale(1.05);
 	}
+
 	100% {
 		-webkit-filter: blur(0);
 		filter: blur(0);
@@ -410,9 +419,11 @@ button {
 		transform: scale(1);
 		filter: blur(3px);
 	}
+
 	50% {
 		transform: scale(1.05);
 	}
+
 	100% {
 		filter: blur(0);
 		transform: scale(1.02);
@@ -480,9 +491,11 @@ button {
 		opacity: 1;
 		background-position: 0 0;
 	}
+
 	99% {
 		background-position: 0 100%;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -493,9 +506,11 @@ button {
 		opacity: 1;
 		background-position: 0 0;
 	}
+
 	99% {
 		background-position: 0 100%;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -728,11 +743,13 @@ button {
 }
 
 @-webkit-keyframes wave {
+
 	0%,
 	100% {
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
+
 	50% {
 		-webkit-transform: translateY(-2px);
 		transform: translateY(-2px);
@@ -740,10 +757,12 @@ button {
 }
 
 @keyframes wave {
+
 	0%,
 	100% {
 		transform: translateY(0);
 	}
+
 	50% {
 		transform: translateY(-2px);
 	}
@@ -881,6 +900,7 @@ button {
 		-webkit-transform: translateX(0);
 		transform: translateX(0);
 	}
+
 	100% {
 		-webkit-transform: translateX(-100%);
 		transform: translateX(-100%);
@@ -891,12 +911,11 @@ button {
 	0% {
 		transform: translateX(0);
 	}
+
 	100% {
 		transform: translateX(-100%);
 	}
 }
-
-
 
 .container__footer {
 	display: flex;
@@ -1015,7 +1034,6 @@ button {
 @media (max-width: 576px) {
 	.pagination {
 		margin-top: 30px;
-		gap: 51px;
 	}
 
 	.pagination_button {
@@ -1032,5 +1050,3 @@ button {
 		font-size: 20px;
 	}
 }
-
-
