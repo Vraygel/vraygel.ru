@@ -1372,6 +1372,7 @@ button {
 	.header__navigation {
 		column-gap: 24px;
 	}
+	
 	.header__menu {
 		gap: 24px;
 	}
