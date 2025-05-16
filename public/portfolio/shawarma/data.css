@@ -8,8 +8,8 @@
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('./fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
-		url('./fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+	src: url('./fonts/montserrat/Montserrat-Medium.woff2') format('woff2'),
+		url('./fonts/montserrat/Montserrat-Medium.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -18,9 +18,9 @@
 	font-family: 'Pacifico';
 	src: local('Pacifico Regular'),
 		local('Pacifico-Regular'),
-		url('./fonts/Pacifico/Pacificoregular.woff2') format('woff2'),
-		url('./fonts/Pacifico/Pacificoregular.woff') format('woff'),
-		url('./fonts/Pacifico/Pacificoregular.ttf') format('truetype');
+		url('./fonts/pacifico/Pacificoregular.woff2') format('woff2'),
+		url('./fonts/pacifico/Pacificoregular.woff') format('woff'),
+		url('./fonts/pacifico/Pacificoregular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
