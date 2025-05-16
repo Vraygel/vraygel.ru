@@ -60,7 +60,6 @@ img {
 	--css: #0c73b8;
 	--js: #e7a020;
 	--react: #28a9e0;
-	--white: #fff;
 	--black: #000;
 	--width: calc(var(--maxWidth) - var(--minWidth));
 }
@@ -245,11 +244,11 @@ img {
 }
 
 .header__menu-item {
-	transition: color ease-in 0.3s, transform ease-in 0.3s;
+	transition: transform ease-in 0.3s;
+	color: var(--brand-1);
 }
 
 .header__menu-item:hover {
-	color: var(--brand-1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
@@ -1144,7 +1143,7 @@ img {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 112%;
-	color: var(--white);
+	color: var(--grey);
 }
 
 .contact__input:focus,

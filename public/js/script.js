@@ -86,8 +86,8 @@ validation
     },
     {
       rule: "minLength",
-      value: 3,
-      errorMessage: "Имя должно содержать не менее 3 символов",
+      value: 2,
+      errorMessage: "Имя должно содержать не менее 2 символов",
     },
     {
       rule: "maxLength",
@@ -133,4 +133,12 @@ validation
   })
   .onFail((fields) => {
     openModal(modalError);
+  });
+
+  const textBlock = document.getElementById('about__content');
+  const toggleButton = document.getElementById('about__btn');
+
+  toggleButton.addEventListener('click', () => {
+      textBlock.classList.toggle('full');
+      toggleButton.textContent = textBlock.classList.contains('full') ? 'Свернуть' : 'Развернуть';
   });
