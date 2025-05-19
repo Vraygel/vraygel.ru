@@ -723,6 +723,10 @@ h6 {
 	.header-nav-list {
 		flex-direction: column;
 	}
+
+	.footer-nav-list {
+		font-size: 15px;
+	}
 }
 
 @media (max-width: 640px) {
